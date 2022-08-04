@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>[ODIN].NET</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <section id="sign_up">
+      <div class="container">
+        <div class="picture">
+          <img src="./images/iceberg.jpg" alt="" />
+        </div>
+        <div class="content">
+          <div class="info_card">
+            <h2 class="logo">[ODIN].NET</h2>
+            <div class="info">
+              <h1>Sign up and get started!</h1>
+              <p>
+                Explore the most entertaining content in the internet right away
+              </p>
+            </div>
+          </div>
+          <div class="form_card">
+            <div class="column1">
+              <h2>Let's do this!</h2>
+              <form id="signUp_form">
+                <!-- name lastname -->
+                <ul>
+                  <li>
+                    <label for="user_firstName">First Name</label>
+                    <input
+                      type="text"
+                      id="user_firstName"
+                      name="firstName"
+                      maxlength="20"
+                      pattern="^[A-Za-z]{1,20}$"
+                      data-number="0"
+                      novalidate
+                      required
+                    />
+                    <h5>This field is required</h5>
+                  </li>
+                  <li>
+                    <label for="user_lastName">Last Name</label>
+                    <input
+                      type="text"
+                      id="user_lastName"
+                      name="lastname"
+                      maxlength="20"
+                      pattern="^[A-Za-z]{1,20}$"
+                      data-number="1"
+                      novalidate
+                      required
+                    />
+                    <h5>Something's wrong</h5>
+                  </li>
+                </ul>
+                <!-- mail phone -->
+                <ul>
+                  <li>
+                    <label for="user_mail">Email</label>
+                    <input
+                      type="email"
+                      id="user_mail"
+                      name="mail"
+                      data-number="2"
+                      placeholder="example@email.com"
+                      required
+                      novalidate
+                    />
+                    <h5>Something's wrong</h5>
+                  </li>
+                  <li>
+                    <label for="user_phone">Phone (optional)</label>
+                    <input
+                      type="tel"
+                      id="user_phone"
+                      name="phone"
+                      data-number="3"
+                    />
+                    <h5>Something's wrong</h5>
+                  </li>
+                </ul>
+                <!-- password -->
+                <ul>
+                  <li>
+                    <label for="user_password">Password</label>
+                    <input
+                      type="password"
+                      id="user_password"
+                      name="password"
+                      data-number="4"
+                      pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
+                      required
+                    />
+                    <h5>Something's wrong</h5>
+                  </li>
+                  <li>
+                    <label for="user_cpassword">Confirm password</label>
+                    <input
+                      type="password"
+                      id="user_cpassword"
+                      name="cpassword"
+                      data-number="5"
+                      required
+                      disabled
+                    />
+                    <h5></h5>
+                  </li>
+                </ul>
+              </form>
+            </div>
+            <div class="column2">
+              <ul>
+                <h3>Password must contain:</h3>
+                <li>● At least 8 characters</li>
+                <li>● An uppercase letter</li>
+                <li>● A lowercase letter</li>
+                <li>● A number or special character</li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer_card">
+            <button type="submit" form="signUp_form" id="btn_createAcc">
+              Create account
+            </button>
+            <div class="bottom_text">
+              <h3>Already have an account?</h3>
+              <h3>Sign in</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
