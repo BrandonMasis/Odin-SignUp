@@ -91,8 +91,8 @@ password.addEventListener("click", () => {
 
 //Password requirement requirements
 const lengthRegex = /.{8,20}/;
-const uppercaseRegex = /[A-B]+/;
-const lowercaseRegex = /[a-b]+/;
+const uppercaseRegex = /[A-Z]+/;
+const lowercaseRegex = /[a-z]+/;
 const numberSymbolRegex = /(\W+)|([0-9]+)/;
 
 password.addEventListener("input", () => {
